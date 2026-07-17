@@ -17,7 +17,7 @@ if ! python -c "import fastapi" 2>/dev/null; then
 fi
 
 echo "Starting Morse Decoder server at http://localhost:9000"
-python server/main.py &
+python -m server.main &
 SERVER_PID=$!
 
 sleep 2
